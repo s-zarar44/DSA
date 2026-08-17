@@ -27,3 +27,11 @@ Solutions are added selectively after solving and experimenting with different a
 **Language:** Java, C, C++, JavaScript
 
 **Practice:** Daily DSA / Competitive Programming
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0485-max-consecutive-ones](https://github.com/s-zarar44/DSA/tree/main/0485-max-consecutive-ones/) | Easy |
+<!---LeetCode Topics End-->
