@@ -34,4 +34,17 @@ Solutions are added selectively after solving and experimenting with different a
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0485-max-consecutive-ones](https://github.com/s-zarar44/DSA/tree/main/0485-max-consecutive-ones/) | Easy |
+| [1004-max-consecutive-ones-iii](https://github.com/s-zarar44/DSA/tree/main/1004-max-consecutive-ones-iii/) | Medium |
+## Binary Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1004-max-consecutive-ones-iii](https://github.com/s-zarar44/DSA/tree/main/1004-max-consecutive-ones-iii/) | Medium |
+## Sliding Window
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1004-max-consecutive-ones-iii](https://github.com/s-zarar44/DSA/tree/main/1004-max-consecutive-ones-iii/) | Medium |
+## Prefix Sum
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1004-max-consecutive-ones-iii](https://github.com/s-zarar44/DSA/tree/main/1004-max-consecutive-ones-iii/) | Medium |
 <!---LeetCode Topics End-->
