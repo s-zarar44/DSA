@@ -43,6 +43,7 @@ Solutions are added selectively after solving and experimenting with different a
 ## Sliding Window
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0424-longest-repeating-character-replacement](https://github.com/s-zarar44/DSA/tree/main/0424-longest-repeating-character-replacement/) | Medium |
 | [0904-fruit-into-baskets](https://github.com/s-zarar44/DSA/tree/main/0904-fruit-into-baskets/) | Medium |
 | [1004-max-consecutive-ones-iii](https://github.com/s-zarar44/DSA/tree/main/1004-max-consecutive-ones-iii/) | Medium |
 ## Prefix Sum
@@ -52,5 +53,10 @@ Solutions are added selectively after solving and experimenting with different a
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0424-longest-repeating-character-replacement](https://github.com/s-zarar44/DSA/tree/main/0424-longest-repeating-character-replacement/) | Medium |
 | [0904-fruit-into-baskets](https://github.com/s-zarar44/DSA/tree/main/0904-fruit-into-baskets/) | Medium |
+## String
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0424-longest-repeating-character-replacement](https://github.com/s-zarar44/DSA/tree/main/0424-longest-repeating-character-replacement/) | Medium |
 <!---LeetCode Topics End-->
