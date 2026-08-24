@@ -23,7 +23,7 @@ Each problem is stored in its own directory containing the submitted solution an
 
 Solutions are added selectively after solving and experimenting with different approaches.
 
-----
+---
 
 **Language:** Java, C, C++, JavaScript
 
