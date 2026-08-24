@@ -6,16 +6,24 @@
 
 | Total Problems | Topics |
 |---|---|
-| 2 | 2 |
+| 3 | 4 |
 
 ---
 
 ## 📂 Topic-Wise Problems
 
+- [brute force](#brute-force) (1)
 - [constructive algorithms](#constructive-algorithms) (1)
 - [sortings](#sortings) (1)
+- [strings](#strings) (1)
 
 ---
+
+### brute force
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 1881A | [Don't Try to Count](https://codeforces.com/contest/1881/problem/A) | 800 | [Java 21](https://github.com/s-zarar44/DSA/blob/HEAD/1881/A%20-%20Don't%20Try%20to%20Count/solution.java) |
 
 ### constructive algorithms
 
@@ -28,6 +36,12 @@
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
 | 1896A | [Jagged Swaps](https://codeforces.com/contest/1896/problem/A) | 800 | [Java 21](https://github.com/s-zarar44/DSA/blob/HEAD/1896/A%20-%20Jagged%20Swaps/solution.java) |
+
+### strings
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 1881A | [Don't Try to Count](https://codeforces.com/contest/1881/problem/A) | 800 | [Java 21](https://github.com/s-zarar44/DSA/blob/HEAD/1881/A%20-%20Don't%20Try%20to%20Count/solution.java) |
 
 ---
 
