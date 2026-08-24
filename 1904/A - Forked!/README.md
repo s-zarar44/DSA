@@ -3,7 +3,7 @@
 | | |
 |---|---|
 | **Difficulty** | 900 |
-| **Language** | Java 21 |
+| **Language** | C++23 (GCC 14-64, msys2) |
 | **Verdict** | ✅ Accepted |
 | **Problem Link** | [Codeforces 1904A](https://codeforces.com/contest/1904/problem/A) |
 
