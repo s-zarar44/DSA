@@ -6,18 +6,13 @@ class Solution {
         int max = 0;
         int count = 0;
         
-        outer:
         while (j < nums.length) {
             if (nums[j] == 0) {
-                if (count == k) {
-                    if (nums[i] == 0) {
-                        count--;
-                    }
-                    i++;
-                    continue outer;
-                } else {
-                    count++;
-                }
+                count++;
+            }
+            while (count > k) {
+                if (nums[i] == 0) count--;
+                i++;
             }
             max = Math.max(max, j-i+1);
             j++;
