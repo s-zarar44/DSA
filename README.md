@@ -6,15 +6,16 @@
 
 | Total Problems | Topics |
 |---|---|
-| 4 | 5 |
+| 5 | 6 |
 
 ---
 
 ## 📂 Topic-Wise Problems
 
-- [brute force](#brute-force) (1)
+- [brute force](#brute-force) (2)
 - [constructive algorithms](#constructive-algorithms) (1)
 - [greedy](#greedy) (1)
+- [implementation](#implementation) (1)
 - [sortings](#sortings) (1)
 - [strings](#strings) (1)
 
@@ -25,6 +26,7 @@
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
 | 1881A | [Don't Try to Count](https://codeforces.com/contest/1881/problem/A) | 800 | [Java 21](https://github.com/s-zarar44/DSA/blob/HEAD/1881/A%20-%20Don't%20Try%20to%20Count/solution.java) |
+| 1904A | [Forked!](https://codeforces.com/contest/1904/problem/A) | 900 | [Java 21](https://github.com/s-zarar44/DSA/blob/HEAD/1904/A%20-%20Forked!/solution.java) |
 
 ### constructive algorithms
 
@@ -37,6 +39,12 @@
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
 | 1878A | [How Much Does Daytona Cost?](https://codeforces.com/contest/1878/problem/A) | 800 | [Java 21](https://github.com/s-zarar44/DSA/blob/HEAD/1878/A%20-%20How%20Much%20Does%20Daytona%20Cost%3F/solution.java) |
+
+### implementation
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 1904A | [Forked!](https://codeforces.com/contest/1904/problem/A) | 900 | [Java 21](https://github.com/s-zarar44/DSA/blob/HEAD/1904/A%20-%20Forked!/solution.java) |
 
 ### sortings
 
