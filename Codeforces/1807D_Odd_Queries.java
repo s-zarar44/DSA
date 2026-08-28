@@ -22,11 +22,9 @@ public class Problem_1 {
                 int r = sc.nextInt() - 1;
                 int k = sc.nextInt();
  
-                int totalSum = arr[n-1];
- 
                 int prefixSum = 0;
                 if (l > 0) prefixSum = arr[l-1];
-                int suffixSum = totalSum - arr[r];
+                int suffixSum = arr[n-1] - arr[r];
                 int betweenSum = k * (r-l+1);
  
                 if (((prefixSum + betweenSum + suffixSum) & 1) == 1) {
