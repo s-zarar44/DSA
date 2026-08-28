@@ -9,10 +9,8 @@ public class Problem_1 {
  
             int count = 0;
             int max  = 0;
-            char curr = s.charAt(0);
-            
-            for (int i = 0; i < n; i++) {
-                char ch = s.charAt(i);
+            int curr = s.charAt(0);
+            for (char ch : s.toCharArray()) {
                 if (ch == curr) count++;
                 else {
                     max = Math.max(max, count);
