@@ -11,13 +11,23 @@ public class Problem_1 {
             String s = sc.next();
             int count = 0;
  
-            while (!x.contains(s)) {
-                if (count > 5) break;
+            while (x.length() < s.length()) {
                 x += x;
                 count++;
             }
  
-            System.out.println(count <= 5 ? count : -1);
+            if (x.contains(s)) {
+                System.out.println(count);
+            } else {
+                x += x;
+                count++;
+ 
+                if (x.contains(s)) {
+                    System.out.println(count);
+                } else {
+                    System.out.println(-1);
+                }
+            }
         }
     }
 }
