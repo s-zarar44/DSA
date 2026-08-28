@@ -5,29 +5,50 @@ public class Problem_1 {
         int t = sc.nextInt();
         for (int test = 1; test <= t; test++) {
             int n = sc.nextInt();
+            int[] arr = new int[n];
  
-            int first = sc.nextInt();
-            int firstCount = 1;
-            int second = -1;
-            int secondCount = 0;
+            for (int i = 0; i < n; i++) {
+                arr[i] = sc.nextInt();
+            }
  
             boolean isGood = true;
  
-            for (int i = 1; i < n; i++) {
-                int curr = sc.nextInt();
+            int first  = arr[0];
+            int second = arr[0];
  
-                if (curr == first) firstCount++;
-                else if (second == -1) {
-                    second = curr;
-                    secondCount++;
-                } else if (curr == second) secondCount++;
-                else isGood = false;
+            int count = 1;
+ 
+            int i = 1;
+ 
+            while (i < n && arr[i] == first) {
+                count++;
+                i++;
             }
+            if (i != n) {
+                second = arr[i];
+                count--;
+                for (int j = i+1; j < n; j++) {
+                    if (arr[j] != first && arr[j] != second) {
+                        isGood = false;
+                        break;
+                    } else if (arr[j] == first) {
+                        count++;
+                    } else if (arr[j] == second) {
+                        count--;
+                    }
+                }
  
-            if ((isGood && Math.abs(firstCount - secondCount) < 2) || second == -1) {
-                System.out.println("YES");
+                if (isGood) {
+                    if (Math.abs(count) < 2) {
+                        System.out.println("YES");
+                    } else {
+                        System.out.println("NO");
+                    }
+                } else {
+                    System.out.println("NO");
+                }
             } else {
-                System.out.println("NO");
+                System.out.println("YES");
             }
         }
     }
