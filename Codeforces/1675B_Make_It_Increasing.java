@@ -12,17 +12,21 @@ public class Problem_1 {
  
             int count = 0;
  
-            for (int i = n-2; i >= 0; i--) {
-                if (arr[i+1] == 0) {
-                    count = -1;
-                    break;
+            if (n == 1) {
+                System.out.println(count);
+            } else {
+                for (int i = n-2; i >= 0; i--) {
+                    if (arr[i+1] == 0) {
+                        count = -1;
+                        break;
+                    }
+                    while (arr[i] >= arr[i+1]) {
+                        arr[i] /= 2;
+                        count++;
+                    }
                 }
-                while (arr[i] >= arr[i+1]) {
-                    arr[i] /= 2;
-                    count++;
-                }
+                System.out.println(count);
             }
-            System.out.println(count);
         }
     }
 }
