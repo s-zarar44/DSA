@@ -5,21 +5,16 @@ public class Problem_1 {
         int t = sc.nextInt();
         while (t-- > 0) {
             String s = sc.next();
-            StringBuilder sb = new StringBuilder(s);
-            int count = 0;
-            int n = s.length();
-            boolean next = true;
-            while (next && sb.length() > 1) {
-                next = false;
-                for (int i = 1; i < sb.length(); i++) {
-                    if (sb.charAt(i) != sb.charAt(i-1)) {
-                        sb.delete(i-1, i+1);
-                        next = true;
-                        count++;
-                        break;
-                    }
+            int countZero = 0;
+            int countOne = 0;
+            for (int i = 0; i < s.length(); i++) {
+                if (s.charAt(i) == '0') {
+                    countZero++;
+                } else {
+                    countOne++;
                 }
             }
+            int count = Math.min(countZero, countOne);
             if (count % 2 != 0) {
                 System.out.println("DA");
             } else {
