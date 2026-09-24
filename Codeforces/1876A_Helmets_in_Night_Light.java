@@ -12,7 +12,7 @@ public class Practice {
             ArrayList<Tuple> list = new ArrayList<>();
  
             for (int i = 0; i < n; i++) {
-                list.add(new Tuple(sc.nextInt(), 0, false));
+                list.add(new Tuple(sc.nextInt(), 0));
             }
             for (int i = 0; i < n; i++) {
                 list.get(i).second = sc.nextInt();
@@ -23,38 +23,16 @@ public class Practice {
                 System.out.println((long) p*n);
                 continue;
             }
-            int count = 0;
-            long totalCost = 0;
+            int count = 1;
+            long totalCost = p;
  
-            for (int i = 0; i < n; i++) {
-                if (!list.get(i).vis && count + 1 <= n) {
-                    count += 1;
-                    totalCost += p;
-                    list.get(i).vis = true;
-                }
-                if (count == n) break;
- 
-                int req = n - count;
-                int resi = list.get(i).first;
-                int cost = list.get(i).second;
- 
-                if (cost > p) {
-                    totalCost += (long) p*req;
-                     break;
-                }
- 
-                if (req >= resi) {
-                    count += resi;
-                    totalCost += (long) resi * cost;
-                    for (int j = i+1; j <= i+resi; j++) {
-                        list.get(j).vis = true;
-                    }
-                } else {
-                    count += req;
-                    totalCost += (long) req * cost;
-                }
-                if (count == n) break;
+            for (int i = 0; i < n && count < n; i++) {
+                if (list.get(i).second >= p) break;
+                int take = Math.min(list.get(i).first, n-count);
+                count += take;
+                totalCost += (long) take * list.get(i).second;
             }
+            totalCost += (long) p * (n-count);
             System.out.println(totalCost);
         }
         sc.close();
@@ -63,12 +41,10 @@ public class Practice {
     private static class Tuple {
         int first;
         int second;
-        boolean vis;
  
-        public Tuple(int first, int second, boolean vis) {
+        public Tuple(int first, int second) {
             this.first = first;
             this.second = second;
-            this.vis = vis;
         }
     }
 }
