@@ -9,11 +9,9 @@ class Solution {
 
         while (j < n) {
             int curr = fruits[j];
-            if (map.size() <= 2) {
-                map.put(curr, map.getOrDefault(curr, 0) + 1);
-            }
+            map.put(curr, map.getOrDefault(curr, 0) + 1);
 
-            while (map.size() > 2) {
+            if (map.size() > 2) {
                 map.put(fruits[i], map.get(fruits[i])-1);
                 if (map.get(fruits[i]) == 0) {
                     map.remove(fruits[i]);
