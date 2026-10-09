@@ -8,8 +8,6 @@ class Solution {
             set.add(nums[i]);
         }
         int max = 0;
-
-        
         for (int num : set) {
             if (!set.contains(num-1)) {
                 int currLen = 1;
