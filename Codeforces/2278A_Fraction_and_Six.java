@@ -1,3 +1,5 @@
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.Scanner;
  
 public class Problem_1 {
@@ -11,38 +13,29 @@ public class Problem_1 {
             String p = sc.next();
             String q = sc.next();
  
-            if (n < m) {
+            q = q + "six";
+            char[] newp = p.toCharArray();
+            char[] newq = q.toCharArray();
+ 
+            Arrays.sort(newp);
+            Arrays.sort(newq);
+ 
+            if (newp.length != newq.length) {
                 System.out.println("NO");
                 continue;
             }
  
-            int[] freq = new int[26];
+            boolean possible = true;
+ 
             for (int i = 0; i < n; i++) {
-                freq[p.charAt(i) - 'a']++;
-            }
- 
-            for (int i = 0; i < m; i++) {
-                freq[q.charAt(i) - 'a']--;
-            }
-            boolean possible = false;
- 
-            if (freq['s' - 'a'] == 1 && freq['i' - 'a'] == 1 && freq['x' - 'a'] == 1) {
-                possible = true;
-            }
- 
-            for (int i = 0; i < 26; i++) {
-                if (i == 's' - 'a' || i == 'i' - 'a' || i == 'x' - 'a') continue;
-                if (freq[i] != 0) {
+                if (newp[i] != newq[i]) {
                     possible = false;
                     break;
                 }
             }
  
-            if (possible) {
-                System.out.println("YES");
-            } else {
-                System.out.println("NO");
-            }
+            if (possible) System.out.println("YES");
+            else System.out.println("NO");
         }
         sc.close();
     }
