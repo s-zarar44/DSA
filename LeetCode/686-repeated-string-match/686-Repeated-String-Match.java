@@ -1,16 +1,13 @@
 class Solution {
     public int repeatedStringMatch(String a, String b) {
-        String origA = a;
-        String origB = b;
+        int m = a.length();
+        int n = b.length();
+        int repeats = (m + n - 1) / m;
         
-        int i = 1;
+        StringBuilder sb = new StringBuilder(a.repeat(repeats));
 
-        while (a.length() < b.length()) {
-            a += origA;
-            i++;
-        }
-        if (a.contains(b)) return i;
-        if ((a+origA).contains(b)) return i+1;
+        if (sb.indexOf(b) != -1) return repeats;
+        if (sb.append(a).indexOf(b) != -1) return repeats+1;
         return -1;
     }
 }
