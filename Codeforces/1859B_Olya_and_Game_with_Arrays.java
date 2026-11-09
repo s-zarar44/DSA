@@ -38,13 +38,18 @@ public class Practice {
                 i++;
  
             }
-            Arrays.sort(minArr);
-            Arrays.sort(secMinArr);
+            int min = (int) 1e9;
+            int secMin = (int) 1e9;
+ 
+            for (int j = 0; j < n; j++) {
+                min = Math.min(minArr[j], min);
+                secMin = Math.min(secMinArr[j], secMin);
+            }
  
             for (int num : secMinArr) {
                 sum += num;
             }
-            sum = sum - secMinArr[0] + minArr[0];
+            sum = sum - secMin + min;
             System.out.println(sum);
         }
         sc.close();
