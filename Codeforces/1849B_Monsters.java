@@ -14,6 +14,8 @@ public class Practice {
                 int num = sc.nextInt();
                 int rem = num % k;
  
+                if (rem == 0) rem = k;
+ 
                 if (!map.containsKey(rem)) {
                     List<Integer> curr = new ArrayList<>();
                     curr.add(i);
@@ -23,12 +25,6 @@ public class Practice {
                 }
             }
             List<Integer> ind = new ArrayList<>();
-            if (map.containsKey(0)) {
-                for (int val : map.get(0)) {
-                    ind.add(val);
-                }
-                map.remove(0);
-            }
  
             TreeMap<Integer, List<Integer>> sortedTreeMap = new TreeMap<>(map);
             Map<Integer, List<Integer>> sortedMap = sortedTreeMap.descendingMap();
